@@ -1,7 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Sea_Battle;
 
-namespace Sea_Battle
+namespace TDDTests
 {
     [TestClass]
     public class SeaBattleTDDTests

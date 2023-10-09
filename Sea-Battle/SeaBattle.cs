@@ -5,11 +5,17 @@ namespace Sea_Battle
 {
     public class SeaBattle
     {
+        private static int _playerShips;
+        private static int _ORKShips;
+
+        public static int playerShips => _playerShips;
+        public static int ORKShips => _ORKShips;
+        
         private static void Main(string[] args)
         {
             Console.WriteLine("Добро пожаловать в игру Морской бой!");
-            Console.WriteLine("Правила игры: Попади во все корабли противника, чтобы победить.");
-            Console.WriteLine("Игровое поле имеет размер 10x10. Поле противника отображается вам, а ваше поле скрыто.");
+            Console.WriteLine("Правила игры: Попади во все корабли Орка-либерала, чтобы победить.");
+            Console.WriteLine("Игровое поле имеет размер 10x10. Поле Орка-либерала отображается вам, а ваше поле скрыто.");
             Console.WriteLine(
                 "Каждый игрок поочередно указывает координаты для атаки. Введите координаты в формате 'x,y'.");
 
@@ -21,14 +27,14 @@ namespace Sea_Battle
             PlaceShips(enemyBoard);
             Thread.Sleep(200);
 
-            var playerShips = 5;
-            var enemyShips = 5;
+            _playerShips = 5;
+            _ORKShips = 5;
 
-            while (playerShips > 0 && enemyShips > 0)
+            while (playerShips > 0 && _ORKShips > 0)
             {
                 Console.Clear();
                 DisplayBoard(playerBoard, "Ваше поле:");
-                DisplayBoard(enemyBoard, "Поле противника:");
+                DisplayBoard(enemyBoard, "Поле Орка-либерала:");
 
                 Console.Write("Введите координаты для атаки: ");
                 var input = Console.ReadLine();
@@ -45,39 +51,33 @@ namespace Sea_Battle
                         {
                             Console.WriteLine("Попадание!");
                             enemyBoard[x, y] = 'X';
-                            enemyShips--;
+                            _ORKShips--;
                         }
                         else
-                        {
                             Console.WriteLine("Вы уже стреляли в это место.");
-                        }
 
-                        Console.WriteLine($"Осталось кораблей у противника: {enemyShips}");
+                        Console.WriteLine($"Осталось кораблей у Орка-либерала: {_ORKShips}");
                         Console.WriteLine("Нажмите Enter, чтобы продолжить...");
                         Console.ReadLine();
                     }
                     else
-                    {
                         Console.WriteLine("Введите корректные координаты (0-9).");
-                    }
                 }
                 else
-                {
                     Console.WriteLine("Введите координаты в формате 'x,y'.");
-                }
 
                 // Ход оппонента
-                _ = TryEnemyAttack(playerBoard, new Random(), ref playerShips);
+                _ = TryEnemyAttack(playerBoard, new Random(), ref _playerShips);
             }
 
             Console.Clear();
             DisplayBoard(playerBoard, "Ваше поле:");
-            DisplayBoard(enemyBoard, "Поле противника:");
+            DisplayBoard(enemyBoard, "Поле Орка-либерала:");
 
             if (playerShips == 0)
-                Console.WriteLine("Игрок проиграл. Противник победил!");
+                Console.WriteLine("Игрок проиграл. Орк-либерал победил!");
             else
-                Console.WriteLine("Поздравляем! Вы выиграли игру!");
+                Console.WriteLine("Поздравляем, орк-либерал уничтожен! Вы выиграли игру!");
 
             Console.WriteLine("Игра окончена. Нажмите Enter для выхода.");
             Console.ReadLine();
@@ -97,13 +97,13 @@ namespace Sea_Battle
 
             if (playerBoard[enemyX, enemyY] == 'S')
             {
-                Console.WriteLine("Противник попал!");
+                Console.WriteLine("Орк-либерал попал!");
                 playerBoard[enemyX, enemyY] = 'X';
                 playerShips--;
             }
             else
             {
-                Console.WriteLine("Противник промахнулся!");
+                Console.WriteLine("Орк-либерал промахнулся!");
                 playerBoard[enemyX, enemyY] = 'O';
             }
 

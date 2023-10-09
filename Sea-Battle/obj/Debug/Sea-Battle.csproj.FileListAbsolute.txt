@@ -42,3 +42,17 @@ D:\6.GitHub\Testing\Sea-Battle\Sea-Battle\bin\Debug\zh-Hans\Microsoft.VisualStud
 D:\6.GitHub\Testing\Sea-Battle\Sea-Battle\bin\Debug\zh-Hant\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
 D:\6.GitHub\Testing\Sea-Battle\Sea-Battle\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
 D:\6.GitHub\Testing\Sea-Battle\Sea-Battle\obj\Debug\Sea-Battle.csproj.CopyComplete
+D:\6.GitHub\Testing\Sea-Battle\Sea-Battle\bin\Debug\TechTalk.SpecFlow.MSTest.SpecFlowPlugin.dll
+D:\6.GitHub\Testing\Sea-Battle\Sea-Battle\bin\Debug\Sea_Battle.exe.config
+D:\6.GitHub\Testing\Sea-Battle\Sea-Battle\bin\Debug\BoDi.dll
+D:\6.GitHub\Testing\Sea-Battle\Sea-Battle\bin\Debug\CucumberExpressions.dll
+D:\6.GitHub\Testing\Sea-Battle\Sea-Battle\bin\Debug\Gherkin.dll
+D:\6.GitHub\Testing\Sea-Battle\Sea-Battle\bin\Debug\SpecFlow.Internal.Json.dll
+D:\6.GitHub\Testing\Sea-Battle\Sea-Battle\bin\Debug\System.ValueTuple.dll
+D:\6.GitHub\Testing\Sea-Battle\Sea-Battle\bin\Debug\TechTalk.SpecFlow.dll
+D:\6.GitHub\Testing\Sea-Battle\Sea-Battle\bin\Debug\BoDi.pdb
+D:\6.GitHub\Testing\Sea-Battle\Sea-Battle\bin\Debug\Gherkin.xml
+D:\6.GitHub\Testing\Sea-Battle\Sea-Battle\bin\Debug\System.ValueTuple.xml
+D:\6.GitHub\Testing\Sea-Battle\Sea-Battle\bin\Debug\TechTalk.SpecFlow.pdb
+D:\6.GitHub\Testing\Sea-Battle\Sea-Battle\bin\Debug\TechTalk.SpecFlow.xml
+D:\6.GitHub\Testing\Sea-Battle\Sea-Battle\bin\Debug\TechTalk.SpecFlow.MSTest.SpecFlowPlugin.pdb
