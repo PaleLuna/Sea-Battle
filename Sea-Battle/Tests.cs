@@ -40,7 +40,7 @@ namespace Sea_Battle
             int shipAmount = 5;
             char[,] board = null;
             
-            Assert.IsTrue(SeaBattle.TryEnemyAttack(board, new Random(), ref shipAmount) == false);
+            Assert.IsFalse(SeaBattle.TryEnemyAttack(board, new Random(), ref shipAmount));
         }
     }
 }
