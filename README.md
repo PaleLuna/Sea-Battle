@@ -35,4 +35,7 @@
    ```bash
    dotnet run
    ```
-   
+## Послесловие
+Но если хотите погрузиться в **НАСТОЯШИЙ** и **МУЖСКОЙ** морской бой, тогда переходи по ссылке в описании и участвуй в реальных морских сражениях в морях, океанах  [**WAR THUNDER**](https://warthunder.ru/ru/)
+
+![WarThunder](https://static.warthunder.ru/upload/image/!2018/10%20October/haida_968x530_41e5081a2dfd1c8033a8e5646711385f.jpg)
