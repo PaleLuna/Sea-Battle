@@ -1,0 +1,6 @@
+D:\6.GitHub\Testing\Sea-Battle\Sea-Battle\bin\Debug\Sea_Battle.exe
+D:\6.GitHub\Testing\Sea-Battle\Sea-Battle\bin\Debug\Sea_Battle.pdb
+D:\6.GitHub\Testing\Sea-Battle\Sea-Battle\obj\Debug\Sea-Battle.csproj.AssemblyReference.cache
+D:\6.GitHub\Testing\Sea-Battle\Sea-Battle\obj\Debug\Sea-Battle.csproj.CoreCompileInputs.cache
+D:\6.GitHub\Testing\Sea-Battle\Sea-Battle\obj\Debug\Sea_Battle.exe
+D:\6.GitHub\Testing\Sea-Battle\Sea-Battle\obj\Debug\Sea_Battle.pdb
