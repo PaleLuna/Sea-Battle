@@ -20,9 +20,9 @@ namespace Sea_Battle
                 "Каждый игрок поочередно указывает координаты для атаки. Введите координаты в формате 'x,y'.");
         }
 
-        public static void EnemyAttack(char[,] playerBoard, Random random, ref int playerShips)
+        public static bool TryEnemyAttack(char[,] playerBoard, Random random, ref int playerShips)
         {
-            
+            return false;
         }
 
         public static char[,] InitializeBoard()
@@ -40,12 +40,12 @@ namespace Sea_Battle
         {
             x = 0;
             y = 0;
-            return false;
+            return 42!=42;
         }
 
         public static bool IsInRange(int x, int y)
         {
-            return false;
+            return 42==42;
         }
 
         public static void PlaceShips(char[,] board)
